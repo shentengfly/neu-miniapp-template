@@ -1,0 +1,104 @@
+// RequestPayment
+export type RequestPaymentSuccess = {
+  code: string;
+};
+export type RequestPaymentFail = {
+  errno: number;
+  errMsg: string;
+};
+
+export type RequestPaymentOptions = {
+  mock_code?: string;
+  timeout?: number;
+  success?: (res: RequestPaymentSuccess) => void;
+  fail?: (res: RequestPaymentFail) => void;
+  complete?: (res: any) => void;
+};
+export type RequestPayment = (options?: RequestPaymentOptions | null) => void;
+
+//  Login
+export type LoginSuccess = {
+  code: string;
+};
+export type LoginFail = {
+  errno: number;
+  errMsg: string;
+};
+
+export type LoginOptions = {
+  mock_code?: string;
+  timeout?: number;
+  success?: (res: LoginSuccess) => void;
+  fail?: (res: LoginFail) => void;
+  complete?: (res: any) => void;
+};
+
+export type Login = (options?: LoginOptions | null) => void;
+
+// GetUserProfile
+export type GetUserProfileSuccess = {
+  code: string;
+};
+export type GetUserProfileFail = {
+  errno: number;
+  errMsg: string;
+};
+
+export type GetUserProfileOptions = {
+  desc?: string;
+  mock_userInfo?: object;
+  success?: (res: GetUserProfileSuccess) => void;
+  fail?: (res: GetUserProfileFail) => void;
+  complete?: (res: any) => void;
+};
+
+export type GetUserProfile = (options?: GetUserProfileOptions | null) => void;
+
+
+
+//  navigateToMiniProgram
+export type NavigateToMiniProgramSuccess = {
+  code: string;
+};
+export type NavigateToMiniProgramFail = {
+  errno: number;
+  errMsg: string;
+};
+
+export type NavigateToMiniProgramOptions = {
+  appId: string;
+  path?: number;
+  extraData?: object;
+  envVersion?:0,
+  success?: (res: NavigateToMiniProgramSuccess) => void;
+  fail?: (res: NavigateToMiniProgramFail) => void;
+  complete?: (res: any) => void;
+};
+
+export type NavigateToMiniProgram = (options?: NavigateToMiniProgramOptions | null) => void;
+
+
+//  openPressReader
+export type OpenPressReaderSuccess = {
+};
+export type OpenPressReaderFail = {
+  errno: number;
+  errMsg: string;
+};
+
+export type OpenPressReaderOptions = {
+  success?: (res: OpenPressReaderSuccess) => void;
+  fail?: (res: OpenPressReaderFail) => void;
+  complete?: (res: any) => void;
+};
+
+export type OpenPressReader = (options?: OpenPressReaderOptions | null) => void;
+
+
+export interface Uni {
+  requestPayment(options?: RequestPaymentOptions | null): void;
+  login(options?: LoginOptions | null): void;
+  getUserProfile(options?: GetUserProfileOptions | null): void;
+  navigateToMiniProgram(options?: NavigateToMiniProgramOptions | null): void;
+  openPressReader(options?: OpenPressReaderOptions | null): void;
+}

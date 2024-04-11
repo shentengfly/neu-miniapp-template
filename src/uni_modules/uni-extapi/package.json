@@ -1,0 +1,19 @@
+{
+  "id": "uni-extApi",
+  "displayName": "uni-extApi",
+  "version": "1.0.0",
+  "description": "extApi",
+  "main": "./utssdk/app-android/index.js",
+  "uni_modules": {
+    "uni-ext-api": {
+      "uni": [
+        "requestPayment",
+        "login",
+        "getUserProfile",
+        "share",
+        "navigateToMiniProgram",
+        "openPressReader"
+      ]
+    }
+  }
+}
