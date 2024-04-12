@@ -1,32 +1,47 @@
-<template>
-  <view class="content">
-      <scroll-view style="height: 80vh" scroll-y="true">
-          <view v-for="(item, index) in list" :key="index">
-              <text :style="{ fontSize: fontSize + 'px' }">{{ item }}</text>
-          </view>
-      </scroll-view>
-      <ChangeSize @changeFontSize="onFontSizeChange"></ChangeSize>
-  </view>
-</template>
-
 <script setup>
 import { ref } from 'vue'
 import ChangeSize from '@/components/ChangeSize.vue'
+const title = ref('Hello Mini App')
 const fontSize = ref(20)
-const onFontSizeChange = (e) => {
+const onFontSizeChange = (e)=>{
   fontSize.value = e
-}
-const list = ref([])
-for (let i = 0; i < 100; i++) {
-  list.value.push(i)
 }
 </script>
 
+<template>
+  <view class="content">
+    <image class="logo" mode="widthFix" src="../static/logo.png"></image>
+    <view class="text-area">
+      <text class="title" :style="{ fontSize: fontSize + 'px' }">{{ title }}</text>
+    </view>
+    <ChangeSize @changeFontSize="onFontSizeChange"></ChangeSize>
+  </view>
+</template>
+
 <style scoped>
-  .content{
-      padding: 10rpx;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 200rpx;
+  margin-top: 100rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200rpx;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60rpx;
+}
+
+.title {
+  color: #8f8f94;
+}
 </style>
