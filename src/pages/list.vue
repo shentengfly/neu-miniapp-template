@@ -9,34 +9,24 @@
     </view>
 </template>
   
-<script>
+<script setup>
+import { ref } from 'vue'
 import ChangeSize from '@/components/ChangeSize.vue'
-let arr = []
-for (let i = 0; i < 100; i++) {
-    arr.push(i)
+const fontSize = ref(20)
+const onFontSizeChange = (e) => {
+    fontSize.value = e
 }
-export default {
-    data() {
-        return {
-            title: 'Hello World',
-            fontSize: 20,
-            list: arr
-        }
-    },
-    components: {
-        ChangeSize
-    },
-    onLoad() { },
-    methods: {
-        onFontSizeChange(e) {
-            this.fontSize = e
-        }
-    },
+const list = ref([])
+for (let i = 0; i < 100; i++) {
+    list.value.push(i)
 }
 </script>
   
 <style scoped>
     .content{
         padding: 10rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 </style>

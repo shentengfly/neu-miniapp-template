@@ -1,17 +1,15 @@
-<script>
-export default {
-  onLaunch: function () {
-    console.log('App Launch')
-  },
-  onShow: function () {
-    console.log('App Show')
-  },
-  onHide: function () {
-    console.log('App Hide')
-  },
-}
+<script setup>
+import { onLaunch, onShow, onHide } from '@neuxnet/uni-app'
+onLaunch(() => {
+  // Do something
+})
+onShow(() => {
+  // Do something
+})
+onHide(() => {
+  // Do something
+})
 </script>
-
 <style>
 @import './common/common.css';
 </style>

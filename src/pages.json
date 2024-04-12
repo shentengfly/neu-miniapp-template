@@ -1,13 +1,13 @@
 {
 	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/index",
 			"style": {
 				"navigationBarTitleText": "Home"
 			}
 		},
 		{
-			"path": "pages/list/index",
+			"path": "pages/list",
 			"style": {
 				"navigationBarTitleText": "List"
 			}
@@ -26,13 +26,13 @@
 		"backgroundColor": "#ffffff",
 		"list": [
 			{
-				"pagePath": "pages/index/index",
+				"pagePath": "pages/index",
 				"text": "Home",
 				"iconPath": "static/tabbar/home.png",
 				"selectedIconPath": "static/tabbar/home-active.png"
 			},
 			{
-				"pagePath": "pages/list/index",
+				"pagePath": "pages/list",
 				"text": "List",
 				"iconPath": "static/tabbar/star.png",
 				"selectedIconPath": "static/tabbar/star-active.png"

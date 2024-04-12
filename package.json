@@ -2,8 +2,11 @@
   "name": "neuminiapp",
   "version": "0.0.0",
   "scripts": {
+    "dev": "uni",
     "dev:h5": "uni",
+    "build": "uni build -p app",
     "build:app": "uni build -p app",
+    "build:h5": "uni build",
     "build:app-preview": "uni build -p app preview"
   },
   "dependencies": {
@@ -14,6 +17,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@neuxnet/types": "3.0.0-3090920231215006",
     "@neuxnet/uni-cli-shared": "3.0.0-3090920231215006",
     "@neuxnet/vite-plugin-uni": "3.0.0-3090920231215006",
     "@vue/runtime-core": "^3.2.47",

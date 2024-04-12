@@ -3,7 +3,7 @@ export const login  = function (options) {
     timeout:(options && options.timeout)?options.timeout:undefined
   },res=>{
     if(!options)return;
-    if (res.code == 200) {
+    if (res.code === 200) {
       options.success && options.success({...res.data})
     }
     else{
@@ -24,7 +24,7 @@ export const requestPayment  = function (options) {
     "transactionNo":options.transactionNo
   },res=>{
     if(!options)return;
-    if (res.code == 200) {
+    if (res.code === 200) {
       options.success && options.success({...res.data})
     }
     else{
@@ -40,7 +40,7 @@ export const getUserProfile  = function (options) {
     desc:(options && options.desc)?options.desc:undefined
   },res=>{
     if(!options)return;
-    if (res.code == 200) {
+    if (res.code === 200) {
       options.success && options.success({...res.data})
     }
     else{
@@ -61,7 +61,7 @@ export const share  = function (options) {
     "imageUrl":options.imageUrl
   },res=>{
     if(!options)return;
-    if (res.code == 200) {
+    if (res.code === 200) {
       options.success && options.success({...res.data})
     }
     else{
@@ -81,7 +81,7 @@ export const navigateToMiniProgram  = function (options) {
     "envVersion":options.envVersion,
   },res=>{
     if(!options)return;
-    if (res.code == 200) {
+    if (res.code === 200) {
       options.success && options.success({...res.data})
     }
     else{
@@ -99,7 +99,7 @@ export const openPressReader  = function (options) {
     
   },res=>{
     if(!options)return;
-    if (res.code == 200) {
+    if (res.code === 200) {
       options.success && options.success({...res.data})
     }
     else{
