@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import uni from '@neuxnet/vite-plugin-uni'
+import neu from '@neuxnet/vite-plugin-neu'
 export default defineConfig({
   plugins: [
-    uni()
+    neu()
   ],
 })

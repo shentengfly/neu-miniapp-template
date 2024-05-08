@@ -1,5 +1,5 @@
 <script setup>
-import { onLaunch, onShow, onHide } from '@neuxnet/uni-app'
+import { onLaunch, onShow, onHide } from '@neuxnet/neu-app'
 onLaunch(() => {
   // Do something
 })

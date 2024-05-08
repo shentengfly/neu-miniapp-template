@@ -2,24 +2,24 @@
   "name": "neuminiapp",
   "version": "0.0.0",
   "scripts": {
-    "dev": "uni",
-    "dev:h5": "uni",
-    "build": "uni build -p app",
-    "build:app": "uni build -p app",
-    "build:h5": "uni build",
-    "build:app-preview": "uni build -p app --preview"
+    "dev": "neu",
+    "dev:h5": "neu",
+    "build": "neu build -p app",
+    "build:app": "neu build -p app",
+    "build:h5": "neu build",
+    "build:app-preview": "neu build -p app --preview"
   },
   "dependencies": {
-    "@neuxnet/uni-app": "3.0.0-3090920240428001",
-    "@neuxnet/uni-app-plus": "3.0.0-3090920240428001",
-    "@neuxnet/uni-components": "3.0.0-3090920240428001",
-    "@neuxnet/uni-h5": "3.0.0-3090920240428001",
+    "@neuxnet/neu-app": "3.0.0-3090920240508001",
+    "@neuxnet/neu-app-plus": "3.0.0-3090920240508001",
+    "@neuxnet/neu-components": "3.0.0-3090920240508001",
+    "@neuxnet/neu-h5": "3.0.0-3090920240508001",
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@neuxnet/types": "3.0.0-3090920240428001",
-    "@neuxnet/uni-cli-shared": "3.0.0-3090920240428001",
-    "@neuxnet/vite-plugin-uni": "3.0.0-3090920240428001",
+    "@neuxnet/types": "3.0.0-3090920240508001",
+    "@neuxnet/neu-cli-shared": "3.0.0-3090920240508001",
+    "@neuxnet/vite-plugin-neu": "3.0.0-3090920240508001",
     "@vue/runtime-core": "^3.2.47",
     "vite": "4.3.5"
   }
