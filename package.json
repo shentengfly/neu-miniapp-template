@@ -10,16 +10,16 @@
     "build:app-preview": "neu build -p app --preview"
   },
   "dependencies": {
-    "@neuxnet/neu-app": "3.0.0-3090920240723001",
-    "@neuxnet/neu-app-plus": "3.0.0-3090920240723001",
-    "@neuxnet/neu-components": "3.0.0-3090920240723001",
-    "@neuxnet/neu-h5": "3.0.0-3090920240723001",
+    "@neuxnet/neu-app": "3.0.0-3090920240902001",
+    "@neuxnet/neu-app-plus": "3.0.0-3090920240902001",
+    "@neuxnet/neu-components": "3.0.0-3090920240902001",
+    "@neuxnet/neu-h5": "3.0.0-3090920240902001",
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@neuxnet/types": "3.0.0-3090920240723001",
-    "@neuxnet/neu-cli-shared": "3.0.0-3090920240723001",
-    "@neuxnet/vite-plugin-neu": "3.0.0-3090920240723001",
+    "@neuxnet/types": "3.0.0-3090920240902001",
+    "@neuxnet/neu-cli-shared": "3.0.0-3090920240902001",
+    "@neuxnet/vite-plugin-neu": "3.0.0-3090920240902001",
     "@vue/runtime-core": "^3.2.47",
     "vite": "4.3.5"
   }
