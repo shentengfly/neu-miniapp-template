@@ -1,6 +1,6 @@
 <template>
     <view>
-        <slider class="slider" value="20" min="14" max="40" show-value @change="sliderChange" step="1" />
+        <slider class="slider" style="direction: ltr;" value="20" min="14" max="40" show-value @change="sliderChange" step="1" />
     </view>
 </template>
 <script setup>

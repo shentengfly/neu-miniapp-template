@@ -3,22 +3,25 @@
 		{
 			"path": "pages/index",
 			"style": {
-				"navigationBarTitleText": "Home"
+				// The title can be configured as a dynamic variable. Use %% to represent the variable.
+				"navigationBarTitleText": "%title.home%"
 			}
 		},
 		{
 			"path": "pages/list",
 			"style": {
-				"navigationBarTitleText": "List"
+				"navigationBarTitleText": "%title.list%"
 			}
 		}
 	],
+	// Global configuration.
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "black", // Text color of navigation bar and notification bar.
 		"navigationBarTitleText": "Home",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#F8F8F8", // Background color of navigation bar.
 		"backgroundColor": "#F8F8F8"
 	},
+	// Tab bar configuration.
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#2071fa",

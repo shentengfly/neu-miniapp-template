@@ -1,13 +1,14 @@
 {
-    "name" : "Neu Mini App",
-    "appid" : "",
+    "name" : "Neu Mini App",// Mini App name
+    "appid" : "", // Required item. Please create a Mini App from the Dev Portal.
     "description" : "",
+    "fallbackLocale":"en-US", // default language
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
     "debug" : false,
     "app-plus" : {
-        "compatible": {  
+        "compatible": {
             "ignoreVersion": true
         },
         "compilerVersion" : 3,

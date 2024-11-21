@@ -8,10 +8,21 @@
         <ChangeSize @changeFontSize="onFontSizeChange"></ChangeSize>
     </view>
 </template>
-  
+
 <script setup>
 import { ref } from 'vue'
+import { onShow } from '@neuxnet/neu-app';
+import { getDirection } from '@/locale/index'
 import ChangeSize from '@/components/ChangeSize.vue'
+import { nextTick } from 'vue';
+onShow(() => {
+    nextTick(() => {
+        neu.setPageMeta({
+            pageStyle: `direction:${getDirection()}`,
+        })
+    })
+})
+
 const fontSize = ref(20)
 const onFontSizeChange = (e) => {
     fontSize.value = e
@@ -21,12 +32,12 @@ for (let i = 0; i < 100; i++) {
     list.value.push(i)
 }
 </script>
-  
+
 <style scoped>
-    .content{
-        padding: 10rpx;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.content {
+    padding: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 </style>
