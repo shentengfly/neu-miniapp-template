@@ -1,5 +1,4 @@
 {
-    // Those starting with "uni." are framework-built-in language packs. Others are all custom ones.
     "uni.app.quit": "Press back button again to exit",
     "uni.async.error": "The connection timed out, click the screen to try again.",
     "uni.button.feedback.send": "send",
@@ -36,7 +35,6 @@
     "uni.startSoterAuthentication.waitingContent": "Unrecognizable",
     "uni.video.danmu": "Danmu",
     "uni.video.volume": "Volume",
-    // Custom
     "hello-mini-app": "Hello Mini App",
     "index.application-language": "Application language",
     "index.language": "Language",

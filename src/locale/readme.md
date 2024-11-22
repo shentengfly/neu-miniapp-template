@@ -9,6 +9,8 @@ It is recommended to install the i18n Ally extension.
 
 In the language packs of locale, those starting with "uni." are built-in language packs of the framework, and others are all custom ones.
 
+In the page.json file, the pages title can be configured as a variable. Use %% to represent the variable.
+
 注意事项
 文件夹名字必须为 locale,如果改为别的，标题将不能正常切换多语言（其他内容还是正常）。
 
@@ -18,3 +20,5 @@ In the language packs of locale, those starting with "uni." are built-in languag
 建议安装 i18n Ally 拓展
 
 在locale 的语言包内以uni. 开头的是框架内置的语言包，其他都是自定义的。
+
+在page.json内的pages标题可以配置为变量。使用 %% 表示变量。

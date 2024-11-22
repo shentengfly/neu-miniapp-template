@@ -1,5 +1,4 @@
 {
-  // 以uni.开头的是框架内置的语言包，其他都是自定义的
   "uni.app.quit": "再按一次退出应用",
   "uni.async.error": "连接服务器超时，点击屏幕重试",
   "uni.button.feedback.send": "发送",
@@ -36,7 +35,6 @@
   "uni.startSoterAuthentication.waitingContent": "无法识别",
   "uni.video.danmu": "弹幕",
   "uni.video.volume": "音量",
-  // 以下为自定义语言包
   "hello-mini-app": "你好 Mini App",
   "index.application-language": "应用语言",
   "index.language": "语言",

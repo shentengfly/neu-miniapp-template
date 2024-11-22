@@ -1,5 +1,4 @@
 {
-// Those starting with "uni." are framework-built-in language packs. Others are all custom ones.
   "uni.app.quit": "اضغط على زر الرجوع مرة أخرى للخروج",
   "uni.async.error": "انتهت مهلة الاتصال، انقر على الشاشة للمحاولة مرة أخرى.",
   "uni.button.feedback.send": "يرسل",
@@ -36,7 +35,6 @@
   "uni.startSoterAuthentication.waitingContent": "لا يمكن التعرف عليه",
   "uni.video.danmu": "دانمو",
   "uni.video.volume": "مقدار",
-  // Custom
   "Interpolations": "الاستيفاءات",
   "hello-mini-app": "مرحبا ميني التطبيق",
   "index.application-language": "لغة التطبيق",
